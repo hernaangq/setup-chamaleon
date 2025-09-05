@@ -13,5 +13,7 @@ RUN git clone https://github.com/hernaangq/setup-chamaleon.git /setup-chamaleon
 # Set working directory
 WORKDIR /setup-chamaleon
 
+RUN chmod 777 * 
+
 # Optional: Display contents of the directory
 CMD ["/bin/bash"]
