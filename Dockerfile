@@ -9,13 +9,17 @@ RUN apt-get update && \
     apt-get install -y sysbench iperf git && \
     apt-get clean
 
+# Configure Git to avoid interactive prompts
+RUN git config --global http.sslVerify false && \
+    git config --global credential.helper cache
+
 # Clone the Git repository
 RUN git clone https://github.com/hernaangq/setup-chameleon.git /setup-chameleon && \
     cd /setup-chameleon && \
-    sudo chmod 777 *
+    chmod 777 *
 
 # Set the working directory
 WORKDIR /setup-chameleon
 
-# Default command to keep the container running (can be overridden)
+# Default command to keep the container running
 CMD ["/bin/bash"]
