@@ -12,7 +12,7 @@ RUN apt-get update && \
 # Clone the Git repository
 RUN git clone https://github.com/hernaangq/setup-chameleon.git /setup-chameleon && \
     cd /setup-chameleon && \
-    chmod 777 *
+    sudo chmod 777 *
 
 # Set the working directory
 WORKDIR /setup-chameleon
