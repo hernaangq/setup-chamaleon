@@ -14,4 +14,4 @@ RUN git clone https://github.com/hernaangq/setup-chamaleon.git /setup-chamaleon
 WORKDIR /setup-chamaleon
 
 # Optional: Display contents of the directory
-CMD ["ls", "-la"]
+CMD ["/bin/bash"]
