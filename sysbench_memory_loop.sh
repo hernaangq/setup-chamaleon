@@ -9,7 +9,7 @@ echo "Sysbench mem benchmark results" > "$RESULTS_FILE"
 
 for THREADS in "${THREADS_LIST[@]}"; do
     echo "Running sysbench with $THREADS threads..." | tee -a "$RESULTS_FILE"
-    sysbench memory -memory-block-size=1K --memory-total-size=120G --threads=$THREADS run >> "$RESULTS_FILE"
+    sysbench memory --memory-block-size=1K --memory-total-size=120G --threads=$THREADS --memory-oper=read --memory-access-mode=rnd run >> "$RESULTS_FILE"
     echo -e "\n---\n" >> "$RESULTS_FILE"
 done
 
