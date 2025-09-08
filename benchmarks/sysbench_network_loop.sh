@@ -3,11 +3,11 @@
 RESULTS_FILE="network_results.txt"
 THREADS_LIST=(1 2 4 8 16 32 64)
 
-sudo sysctl -w net.core.rmem_max=2621440
-sudo sysctl -w net.core.wmem_max=2621440
-sudo sysctl -w net.ipv4.tcp_rmem="4096 2621440 2621440"
-sudo sysctl -w net.ipv4.tcp_wmem="4096 2621440 2621440"
-sudo sysctl -p
+sysctl -w net.core.rmem_max=2621440
+sysctl -w net.core.wmem_max=2621440
+sysctl -w net.ipv4.tcp_rmem="4096 2621440 2621440"
+sysctl -w net.ipv4.tcp_wmem="4096 2621440 2621440"
+sysctl -p
 
 # Start server in background
 iperf -s -w 0.5M > /dev/null 2>&1 &

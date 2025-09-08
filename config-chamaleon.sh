@@ -7,7 +7,7 @@ sudo apt-get update
 yes | sudo apt-get install sysbench
 yes | sudo apt-get install iperf
 yes | sudo apt install docker.io
-yes | sudo apt install qemu-kvm libvirt-daemon-system virtinst bridge-utils dnsmasq ufw
+yes | sudo apt install qemu-kvm libvirt-daemon-system virtinst bridge-utils dnsmasq ufw procps
 
 # Docker config
 sudo systemctl start docker
