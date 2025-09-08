@@ -1,13 +1,13 @@
 #!/bin/bash
 
-RESULTS_FILE="sysbench_cpu_results.txt"
+RESULTS_FILE="sysbench_disk_results.txt"
 
 THREADS_LIST=(1 2 4 8 16 32 64)
 
 sysbench fileio prepare --file-num=128 --file-block-size=4096 --file-total-size=120G --file-extra-flags=direct
 
 # Clear the results file
-echo "Sysbench CPU benchmark results" > "$RESULTS_FILE"
+echo "Sysbench disk benchmark results" > "$RESULTS_FILE"
 
 for THREADS in "${THREADS_LIST[@]}"; do
     echo "Running sysbench with $THREADS threads..." | tee -a "$RESULTS_FILE"
