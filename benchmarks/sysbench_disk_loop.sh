@@ -11,7 +11,7 @@ echo "Sysbench disk benchmark results" > "$RESULTS_FILE"
 
 for THREADS in "${THREADS_LIST[@]}"; do
     echo "Running sysbench with $THREADS threads..." | tee -a "$RESULTS_FILE"
-    sysbench fileio run --file-num=128 --file-total-size=10G --file-io-mode=sync --file-test-mode=rndrd --file-extra-flags=direct --threads=$THREADS >> "$RESULTS_FILE"
+    sysbench fileio run --file-num=128 --file-total-size=120G --file-io-mode=sync --file-test-mode=rndrd --file-extra-flags=direct --threads=$THREADS >> "$RESULTS_FILE"
     echo -e "\n---\n" >> "$RESULTS_FILE"
 done
 
