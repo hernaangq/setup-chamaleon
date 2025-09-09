@@ -24,6 +24,8 @@ This project automates benchmarking of CPU, memory, disk, and network performanc
   - `sysbench_disk_loop.sh`: Disk benchmarking.
   - `sysbench_network_loop.sh`: Network benchmarking.
 
+- `plotting/`: Contains scripts to plot the results graphs.
+
 - `README.md`: Project documentation.
 
 ## Benchmarking Methodology
