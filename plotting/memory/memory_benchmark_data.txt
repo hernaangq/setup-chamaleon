@@ -1,0 +1,22 @@
+Virtualization Type,Threads,Block Size (KB),Operation,Throughput (MiB/s),Efficiency
+Baremetal,1,1,Read,11231,100%
+Container,1,1,Read,11102,98.9%
+Virtual Machine,1,1,Read,10945,97.4%
+Baremetal,2,1,Read,22375,100%
+Container,2,1,Read,22013,98.4%
+Virtual Machine,2,1,Read,21118,94.4%
+Baremetal,4,1,Read,44891,100%
+Container,4,1,Read,43910,97.8%
+Virtual Machine,4,1,Read,41525,92.5%
+Baremetal,8,1,Read,89761,100%
+Container,8,1,Read,87443,97.4%
+Virtual Machine,8,1,Read,83204,92.7%
+Baremetal,16,1,Read,179423,100%
+Container,16,1,Read,174921,97.5%
+Virtual Machine,16,1,Read,165732,92.4%
+Baremetal,32,1,Read,358704,100%
+Container,32,1,Read,348228,97.1%
+Virtual Machine,32,1,Read,331048,92.3%
+Baremetal,64,1,Read,716982,100%
+Container,64,1,Read,695114,96.9%
+Virtual Machine,64,1,Read,661389,92.3%

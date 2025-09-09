@@ -1,0 +1,22 @@
+Virtualization Type,Server,Client,Threads,Latency (ms),Measured Throughput (Gbits/s),Efficiency
+Baremetal,1,1,1,0.12,30.0,100%
+Container,1,1,1,0.11,32.0,106.7%
+Virtual Machine,1,1,1,0.15,28.0,93.3%
+Baremetal,1,2,2,0.12,59.3,100%
+Container,1,2,2,0.06,71.1,119.9%
+Virtual Machine,1,2,2,0.16,60.9,102.7%
+Baremetal,1,4,4,0.10,110.0,100%
+Container,1,4,4,0.06,121.0,110.0%
+Virtual Machine,1,4,4,0.11,50.0,45.5%
+Baremetal,1,8,8,0.09,195.0,100%
+Container,1,8,8,0.07,211.0,108.2%
+Virtual Machine,1,8,8,0.33,43.9,22.5%
+Baremetal,1,16,16,0.10,339.0,100%
+Container,1,16,16,0.09,347.0,102.4%
+Virtual Machine,1,16,16,0.04,45.0,13.3%
+Baremetal,1,32,32,0.10,372.0,100%
+Container,1,32,32,0.10,333.0,89.5%
+Virtual Machine,1,32,32,2.12,42.0,11.3%
+Baremetal,1,64,64,0.06,345.0,100%
+Container,1,64,64,0.06,354.0,102.6%
+Virtual Machine,1,64,64,0.03,39.0,11.3%

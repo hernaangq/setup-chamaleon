@@ -1,0 +1,22 @@
+Virtualization Type,Threads,Avg. Latency (ms),Measured Throughput (Events per Second),Overheads
+Baremetal,1,5.69,175.82,0%
+Container,1,5.69,175.86,0%
+Virtual Machine,1,19.43,51.45,70.74%
+Baremetal,2,5.69,351.71,0%
+Container,2,5.69,351.38,0.09%
+Virtual Machine,2,19.49,102.55,70.83%
+Baremetal,4,5.69,703.02,0%
+Container,4,5.69,702.62,0.06%
+Virtual Machine,4,38.92,102.63,85.40%
+Baremetal,8,5.69,1404.98,0%
+Container,8,5.70,1402.90,0.15%
+Virtual Machine,8,77.75,102.59,92.70%
+Baremetal,16,6.02,2680.61,0%
+Container,16,6.08,2628.77,1.93%
+Virtual Machine,16,154.81,102.63,96.17%
+Baremetal,32,6.12,5232.90,0%
+Container,32,6.11,5183.90,0.94%
+Virtual Machine,32,308.75,102.67,98.04%
+Baremetal,64,6.27,10208.02,0%
+Container,64,6.33,10101.26,1.05%
+Virtual Machine,64,612.46,102.64,98.99%

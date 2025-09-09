@@ -1,0 +1,22 @@
+Virtualization Type,Threads,Block Size (KB),Operation,Access,I/O Mode,I/O Flag,Operations,Throughput (MiB/s),Efficiency
+Baremetal,1,4,Read,Random,SYNC,DirectIO,63327,98.89,100%
+Container,1,4,Read,Random,SYNC,DirectIO,63020,98.41,99.5%
+Virtual Machine,1,4,Read,Random,SYNC,DirectIO,32164,50.22,50.8%
+Baremetal,2,4,Read,Random,SYNC,DirectIO,116962,182.66,100%
+Container,2,4,Read,Random,SYNC,DirectIO,116278,181.58,99.4%
+Virtual Machine,2,4,Read,Random,SYNC,DirectIO,41458,64.76,35.5%
+Baremetal,4,4,Read,Random,SYNC,DirectIO,177403,277.14,100%
+Container,4,4,Read,Random,SYNC,DirectIO,176937,276.39,99.7%
+Virtual Machine,4,4,Read,Random,SYNC,DirectIO,40394,63.10,22.8%
+Baremetal,8,4,Read,Random,SYNC,DirectIO,217818,340.27,100%
+Container,8,4,Read,Random,SYNC,DirectIO,217503,339.77,99.9%
+Virtual Machine,8,4,Read,Random,SYNC,DirectIO,41007,64.05,18.8%
+Baremetal,16,4,Read,Random,SYNC,DirectIO,243415,380.25,100%
+Container,16,4,Read,Random,SYNC,DirectIO,244184,381.44,100.3%
+Virtual Machine,16,4,Read,Random,SYNC,DirectIO,40745,63.63,16.7%
+Baremetal,32,4,Read,Random,SYNC,DirectIO,262779,410.45,100%
+Container,32,4,Read,Random,SYNC,DirectIO,262850,410.56,100.0%
+Virtual Machine,32,4,Read,Random,SYNC,DirectIO,41325,64.51,15.7%
+Baremetal,64,4,Read,Random,SYNC,DirectIO,262830,410.41,100%
+Container,64,4,Read,Random,SYNC,DirectIO,262787,410.32,99.98%
+Virtual Machine,64,4,Read,Random,SYNC,DirectIO,42130,65.71,16.0%
